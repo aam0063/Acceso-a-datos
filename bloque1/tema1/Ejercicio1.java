@@ -10,6 +10,6 @@ public class Ejercicio1 {
         } else {
             System.out.println("El fichero ya existe.");
         }
-        gdrwhrwhhtr
+        
     }
 }
