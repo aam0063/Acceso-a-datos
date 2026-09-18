@@ -7,11 +7,14 @@ public class Ejemplo4 {
     public static void main(String[] args) {
         try{
             FileReader lector = new FileReader("./tema1/prueba.txt");
+            FileWriter escritor = new FileWriter("./tema1/escritura.txt");
             int data;
             while((data = lector.read()) != -1){
+                escritor.write(data);
                 System.out.print((char)data);
             }
             lector.close();
+            escritor.close();
             System.out.println(" Lectura completada con exito :3");
         }catch(Exception e){
             e.printStackTrace();
