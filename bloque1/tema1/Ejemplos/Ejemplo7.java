@@ -3,7 +3,7 @@ import java.io.RandomAccessFile;
 public class Ejemplo7 {
     public static void main(String[] args) {
         
-        RandomAccessFile file = new RandomAccessFile("./tema1/abecedario.txt", "r");
+        RandomAccessFile file = new RandomAccessFile("./bloque1/tema1/abecedario.txt", "r");
 
         try {
             file.seek(5);
