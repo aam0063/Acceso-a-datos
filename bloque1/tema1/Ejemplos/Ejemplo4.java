@@ -20,7 +20,7 @@ public class Ejemplo4 {
             e.printStackTrace();
         }
 
-        try {
+        try {   
             FileWriter fw = new FileWriter("./tema1/escritura.txt");
             fw.write("Esto es un ejemplo de escritura");
             fw.close();
