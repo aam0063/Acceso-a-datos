@@ -1,3 +1,5 @@
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -27,6 +29,30 @@ public class Ejercicio5 {
         } catch (Exception e) {
         }
 
-        
+        try {
+            
+            String origen2 = "./Bloque1/tema1/cock.png";
+            BufferedInputStream entrada = new BufferedInputStream(new FileInputStream(origen2));
+            BufferedOutputStream salida = new BufferedOutputStream(new FileOutputStream("./Bloque1/tema1/cock.png"));
+
+            byte[] buffered = new byte[4096];
+
+            int bytesLeidos;
+            int contador = 0;
+            long ms = System.currentTimeMillis();
+
+            while ((bytesLeidos = entrada.read(buffered)) != -1){
+                salida.write(buffered, 0, bytesLeidos);
+                contador++;
+            }
+
+            long msdespues = System.currentTimeMillis();
+
+            System.out.println("Ha pasado " + (msdespues-ms) + " ms");
+
+        } catch (Exception e) {
+        }
+
+
     }
 }
