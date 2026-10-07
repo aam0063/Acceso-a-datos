@@ -1,3 +1,4 @@
+package Ejercicios1;
 import java.io.FileWriter;
 import java.io.RandomAccessFile;
 import java.util.Scanner;

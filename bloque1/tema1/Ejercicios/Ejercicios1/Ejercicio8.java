@@ -1,3 +1,4 @@
+package Ejercicios1;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;

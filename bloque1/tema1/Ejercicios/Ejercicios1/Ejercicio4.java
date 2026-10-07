@@ -1,3 +1,4 @@
+package Ejercicios1;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
