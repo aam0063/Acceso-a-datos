@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ordenadores>
+    <ordenador>
+        <marca>HP</marca>
+        <ram>16GB</ram>
+        <precio>600</precio>
+    </ordenador>
+    <ordenador>
+        <marca>Lenovo</marca>
+        <ram>8GB</ram>
+        <precio>450</precio>
+    </ordenador>
+</ordenadores>
